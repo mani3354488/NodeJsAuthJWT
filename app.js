@@ -10,6 +10,8 @@ const AuthRoute = require('./Routes/Auth.routh')
 
 const app = express()
 app.use(morgan('dev'))
+app.use(express.json)
+app.use(express.urlencoded({extended: true}))
 
 app.get('/', async (req, res, next) => {
     res.send('Hello')

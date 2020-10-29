@@ -2,11 +2,17 @@ GET http://localhost:3000
 
 ###login route
 
-POST http://localhost:3000/auth/login
+POST http://localhost:3000/auth/register
+Content-Type: application/application/json
+
+{
+    "email": "test@example.com",
+    "password": "test"
+}
 
 ###register route
 
-POST http://localhost:3000/auth/register
+POST http://localhost:3000/auth/login
 
 ###refresh token route
 
